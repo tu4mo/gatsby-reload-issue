@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import { Component } from "fakelib"
+import { Component } from "../../fakelib"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"

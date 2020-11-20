@@ -8,7 +8,6 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
-    "fakelib": "file:fakelib",
     "gatsby": "^2.24.57",
     "gatsby-image": "^2.5.0",
     "gatsby-plugin-feed": "^2.7.0",
