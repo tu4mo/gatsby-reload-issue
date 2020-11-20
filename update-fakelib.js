@@ -23,9 +23,9 @@ function createComponent(i) {
 let i = 1
 
 const start = async () => {
-  for (i = 1; i <= 10; i++) {
+  for (i = 1; i <= 30; i++) {
     createComponent(i)
-    await sleep(500)
+    await sleep(200)
   }
 }
 
