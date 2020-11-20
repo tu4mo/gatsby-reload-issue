@@ -1,6 +1,6 @@
 function Component() {
-      return "10 1605887917044"
-    }
+  return "30 1605892300226"
+}
     
-    export { Component }
+export { Component }
   

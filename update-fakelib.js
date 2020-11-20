@@ -11,19 +11,17 @@ function createComponent(i) {
   fs.writeFileSync(
     "./fakelib/Component.js",
     `function Component() {
-      return "${i} ${Date.now()}"
-    }
+  return "${i} ${Date.now()}"
+}
     
-    export { Component }
+export { Component }
   `,
     "utf8"
   )
 }
 
-let i = 1
-
 const start = async () => {
-  for (i = 1; i <= 30; i++) {
+  for (let i = 1; i <= 30; i++) {
     createComponent(i)
     await sleep(200)
   }
