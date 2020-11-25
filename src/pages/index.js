@@ -1,6 +1,17 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import { Component } from "../../fakelib"
+import {
+  Component1,
+  Component2,
+  Component3,
+  Component4,
+  Component5,
+  Component6,
+  Component7,
+  Component8,
+  Component9,
+  Component10,
+} from "../../fakelib"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -28,7 +39,25 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <Bio />
-      Test: <Component />
+      <Component1 />
+      <br />
+      <Component2 />
+      <br />
+      <Component3 />
+      <br />
+      <Component4 />
+      <br />
+      <Component5 />
+      <br />
+      <Component6 />
+      <br />
+      <Component7 />
+      <br />
+      <Component8 />
+      <br />
+      <Component9 />
+      <br />
+      <Component10 />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug

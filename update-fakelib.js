@@ -6,23 +6,24 @@ function sleep(ms) {
   })
 }
 
-function createComponent(i) {
+function createComponent(i, timestamp) {
   console.log("creating component…")
   fs.writeFileSync(
-    "./fakelib/Component.js",
-    `function Component() {
-  return "${i} ${Date.now()}"
+    `./fakelib/Component${i}.js`,
+    `function Component${i}() {
+  return "${i} ${timestamp}"
 }
     
-export { Component }
+export { Component${i} }
   `,
     "utf8"
   )
 }
 
 const start = async () => {
-  for (let i = 1; i <= 30; i++) {
-    createComponent(i)
+  const timestamp = Date.now()
+  for (let i = 1; i <= 10; i++) {
+    createComponent(i, timestamp)
     await sleep(200)
   }
 }
