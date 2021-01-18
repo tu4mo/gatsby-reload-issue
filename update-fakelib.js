@@ -10,17 +10,12 @@ function createComponent(i, timestamp) {
   console.log(`Creating Component${i}…`)
   fs.writeFileSync(
     `./fakelib/Component${i}.js`,
-    `function Component${i}() {
-  return "<Component${i}> - Updated: ${timestamp}"
-}
-    
-export { Component${i} }
-  `,
+    `export function Component${i}() { return "<Component${i}> - Updated: ${timestamp}" }`,
     "utf8"
   )
 }
 
-const start = async () => {
+async function start() {
   const today = new Date()
 
   for (let i = 1; i <= 10; i++) {

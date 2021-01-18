@@ -1,6 +1,1 @@
-function Component7() {
-  return "<Component7> - Updated: 9:22:11 PM"
-}
-    
-export { Component7 }
-  
+export function Component7() { return "<Component7> - Updated: 2:45:15 PM" }
