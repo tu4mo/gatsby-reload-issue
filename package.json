@@ -3,9 +3,9 @@
   "private": true,
   "version": "0.1.0",
   "dependencies": {
-    "gatsby": "^2.30.3",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "gatsby": "^2.31.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "prettier": "^2.2.1"
@@ -13,7 +13,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop --verbose",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",

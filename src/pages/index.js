@@ -12,7 +12,7 @@ import {
   Component10,
 } from "../../fakelib"
 
-export default () => (
+const Page = () => (
   <>
     <Component1 />
     <br />
@@ -35,3 +35,5 @@ export default () => (
     <Component10 />
   </>
 )
+
+export default Page

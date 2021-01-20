@@ -1,1 +1,3 @@
-export default () => "404"
+const Page = () => "404"
+
+export default Page
