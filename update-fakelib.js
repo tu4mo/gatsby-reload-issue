@@ -20,7 +20,7 @@ async function start() {
 
   for (let i = 1; i <= 10; i++) {
     createComponent(i, today.toLocaleTimeString("en-US"))
-    await sleep(200)
+    await sleep(10)
   }
 }
 
