@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "dependencies": {
-    "gatsby": "^3.0.4",
+    "gatsby": "3.1.0-alpha-hmr-fix.16+831f9a9d64",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },

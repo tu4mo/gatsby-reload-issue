@@ -14,7 +14,7 @@ import {
 
 const Page = () => (
   <>
-    Page updated: 11:06:33 PM
+    Page updated: #
     <br />
     <Component1 />
     <br />
